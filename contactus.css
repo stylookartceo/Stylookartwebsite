@@ -42,7 +42,8 @@ nav a:hover {
     justify-content: space-around;
     padding: 20px;
 }
-.active{
+
+.active {
     background-color: #333;
     text-decoration-line: underline;
 }
@@ -54,5 +55,21 @@ footer {
     /* padding: 10px 0; */
     position: fixed;
     width: 100%;
-    bottom: 0; 
+    bottom: 0;
+}
+
+table {
+    margin: auto;
+    margin-top: 60px;
+    padding: 50px;
+    border: solid 2px #333;
+    padding: 30px;
+}
+
+td {
+    padding: 10px;
+}
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

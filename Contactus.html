@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="contactus.css">
 </head>
+
 <body>
     <header>
         <h1>Stylookart</h1>
@@ -16,12 +18,62 @@
     <nav>
         <a href="home.html">Home</a>
         <a href="index.html">Shop</a>
-        <a href="aboutus.html">About Us</a>
+        <a href="https://stylookart.neocities.org/">About Us</a>
         <a href="Contactus.html" class="active">Contact Us</a>
     </nav>
+
+
+    <main>
+        <form action="https://formspree.io/f/xpwzzzej" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label name="name">Name</label>
+                    </td>
+                    <td>
+                        <input name="name" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label name="email">E-mail</label>
+                    </td>
+                    <td>
+                        <input name="email" type="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label name="phone">Phone</label>
+                    </td>
+                    <td>
+                        <input name="phone" type="tel" pattern="[0-9]{11}|[0-9]{10}" inputmode="numeric" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label name="issue">Issue</label>
+                    </td>
+                    <td>
+                        <textarea placeholder="Describe your issue here" name="issue" cols="21" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Send">
+                    </td>
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </main>
 
     <footer>
         <p>&copy; 2024 Stylookart. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
