@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Page - Stylookart</title>
+    <link rel="stylesheet" href="buynow.css">
+</head>
+<body>
+    <div class="buy-container">
+        <h2>Place Your Order</h2>
+        <form action="https://formspree.io/f/movqjppb" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your valid mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your proper address for delevery" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Wnter your email id Ex:someone@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Select Your Product</label>
+                <select id="product" name="product" required>
+                    <option value="">Choose a product</option>
+                    <option value="Product1">Digiwins Ultrapods ₹ 699</option>
+                    <option value="Product2">UPOZA Ultrapods Pro ₹ 759</option>
+                    <option value="Product3">NKL Smart Design UltraPods Buds ₹ 749</option>
+                    <option value="Product4">TWS ₹ 499</option>
+                    <option value="Product5">FITRIC Ultra pods Pro2 ₹ 799</option>
+                    <option value="Product6">OSHEE STORE i-12 ₹ 399</option>
+                    <option value="Product7">Noise Air Buds Pro 3 3</option>
+                    <option value="Product8">Product ₹ 1,099</option>
+                    <option value="Product9">boAt Airdopes 161 ₹ 899</option>
+                    <option value="Product10">zivallo P9 pro ₹ 899</option>
+                    <option value="Product11">FITRIC R1s Bluetooth Selfie Sticks ₹ 499</option>
+                    <option value="Product12">FITRIC R1s-L ₹ 799</option>
+                    <option value="Product13">OnePlus Bullets Wireless ₹ 1,199</option>
+                    <option value="Product14">OnePlus Bullets Wireless Black ₹ 1,199</option>
+                    <option value="Product15">Boat Rockerz 235 Pro ₹ 999</option>
+                    <option value="Product16">TECHGEAR 3-in-1 Cable ₹ 349</option>
+                    <option value="Product17">GADGETSMORE USB Type C ₹ 149</option>
+                    <option value="Product18">Toreto Micro USB Cable ₹ 99</option>
+                    <option value="Product19">DLO BASS Heads 310 ₹ 99</option>
+                    <option value="Product20">Temper glass (All type of phones) ₹ 129</option>
+                </select>
+                <label for="temperd glass"><input type="text" name="temperdglass" placeholder="Enter Your mobile model for temperd glass"></label>
+            </div>
+            <div class="form-group">
+                <label>Quantity of the Product</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="quantity" value="1" required> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                    <label><input type="radio" name="quantity" value="4"> 4</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Details</label>
+                
+                <label><input type="checkbox" name="quantity" value="3">Online Payment </label>
+                
+                <label><input type="checkbox" name="quantity" value="4">Pay on  delivery </label>
+                <button id="popupButton" onclick="showPopup()">Payment QR</button>
+
+                <!-- Popup Container -->
+                <div id="popupContainer">
+                  <span id="closeButton" onclick="hidePopup()">&times;</span>
+                  <img id="popupImage" src="qr.jpg" alt="Popup Image">
+                </div>
+                <!-- <p>Upload Payment Proof</p>
+
+                <input type="file" name="upload" placeholder="upload Payment Proof" required> -->
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+        <script>
+            function showPopup() {
+              document.getElementById("popupContainer").style.display = "flex";
+            }
+        
+            function hidePopup() {
+              document.getElementById("popupContainer").style.display = "none";
+            }
+          </script>
+    </div>
+</body>
+</html>
